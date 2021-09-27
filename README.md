@@ -10,7 +10,7 @@ openGL学习记录，包含了**ssao**和**pbr**这两章的内容
 visual studio2019或更新版本的visual studio
 
 ### 文件结构
-`
+```
 src
 ├─ pbr
 │    ├─ background.fs
@@ -32,7 +32,7 @@ src
        ├─ ssao_geometry.fs
        ├─ ssao_geometry.vs
        └─ ssao_lighting.fs
-`
+```
 
 ### 运行
 安装好visual studio2019后双击learn1.sln,即可打开工程
