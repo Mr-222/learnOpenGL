@@ -90,12 +90,12 @@ int main()
 
     // build and compile shaders
     // -------------------------
-    Shader pbrShader("pbr/pbr.vs", "pbr/pbr.fs");
-    Shader equirectangularToCubemapShader("pbr/cubemap.vs", "pbr/equirectangular_to_cubemap.fs");
-    Shader irradianceShader("pbr/cubemap.vs", "pbr/irradiance_convolution.fs");
-    Shader prefilterShader("pbr/cubemap.vs", "pbr/prefilterShader.fs");
-    Shader brdfShader("pbr/brdf.vs", "pbr/brdf.fs");
-    Shader backgroundShader("pbr/background.vs", "pbr/background.fs");
+    Shader pbrShader("src/pbr/pbr.vs", "src/pbr/pbr.fs");
+    Shader equirectangularToCubemapShader("src/pbr/cubemap.vs", "src/pbr/equirectangular_to_cubemap.fs");
+    Shader irradianceShader("src/pbr/cubemap.vs", "src/pbr/irradiance_convolution.fs");
+    Shader prefilterShader("src/pbr/cubemap.vs", "src/pbr/prefilterShader.fs");
+    Shader brdfShader("src/pbr/brdf.vs", "src/pbr/brdf.fs");
+    Shader backgroundShader("src/pbr/background.vs", "src/pbr/background.fs");
 
     pbrShader.use();
     pbrShader.setInt("irradianceMap", 0);
@@ -106,7 +106,7 @@ int main()
     pbrShader.setInt("metallicMap", 5);
     pbrShader.setInt("roughnessMap", 6);
     pbrShader.setInt("aoMap", 7);
-
+    
     backgroundShader.use();
     backgroundShader.setInt("environmentMap", 0);
 

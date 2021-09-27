@@ -19,26 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <None Include="pbr\background.fs" />
-    <None Include="pbr\background.vs" />
-    <None Include="pbr\brdf.fs" />
-    <None Include="pbr\brdf.vs" />
-    <None Include="pbr\cubemap.vs" />
-    <None Include="pbr\equirectangular_to_cubemap.fs" />
-    <None Include="pbr\irradiance_convolution.fs" />
-    <None Include="pbr\pbr.fs" />
-    <None Include="pbr\pbr.vs" />
-    <None Include="pbr\prefilterShader.fs" />
-    <None Include="ssao\ssao.fs" />
-    <None Include="ssao\ssao.vs" />
-    <None Include="ssao\ssao_blur.fs" />
-    <None Include="ssao\ssao_geometry.fs" />
-    <None Include="ssao\ssao_geometry.vs" />
-    <None Include="ssao\ssao_lighting.fs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="pbr\pbr.cpp" />
-    <ClCompile Include="ssao\ssao.cpp" />
+    <ClCompile Include="src\pbr\pbr.cpp" />
+    <ClCompile Include="src\ssao\ssao.cpp" />
     <ClCompile Include="utility\glad.c" />
   </ItemGroup>
   <ItemGroup>
@@ -47,6 +29,24 @@
     <ClInclude Include="utility\model.h" />
     <ClInclude Include="utility\shader_s.h" />
     <ClInclude Include="utility\stb_image.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\pbr\background.fs" />
+    <None Include="src\pbr\background.vs" />
+    <None Include="src\pbr\brdf.fs" />
+    <None Include="src\pbr\brdf.vs" />
+    <None Include="src\pbr\cubemap.vs" />
+    <None Include="src\pbr\equirectangular_to_cubemap.fs" />
+    <None Include="src\pbr\irradiance_convolution.fs" />
+    <None Include="src\pbr\pbr.fs" />
+    <None Include="src\pbr\pbr.vs" />
+    <None Include="src\pbr\prefilterShader.fs" />
+    <None Include="src\ssao\ssao.fs" />
+    <None Include="src\ssao\ssao.vs" />
+    <None Include="src\ssao\ssao_blur.fs" />
+    <None Include="src\ssao\ssao_geometry.fs" />
+    <None Include="src\ssao\ssao_geometry.vs" />
+    <None Include="src\ssao\ssao_lighting.fs" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

@@ -12,63 +12,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="pbr\background.fs">
-      <Filter>pbr</Filter>
-    </None>
-    <None Include="pbr\background.vs">
-      <Filter>pbr</Filter>
-    </None>
-    <None Include="pbr\brdf.fs">
-      <Filter>pbr</Filter>
-    </None>
-    <None Include="pbr\brdf.vs">
-      <Filter>pbr</Filter>
-    </None>
-    <None Include="pbr\cubemap.vs">
-      <Filter>pbr</Filter>
-    </None>
-    <None Include="pbr\equirectangular_to_cubemap.fs">
-      <Filter>pbr</Filter>
-    </None>
-    <None Include="pbr\irradiance_convolution.fs">
-      <Filter>pbr</Filter>
-    </None>
-    <None Include="pbr\pbr.fs">
-      <Filter>pbr</Filter>
-    </None>
-    <None Include="pbr\pbr.vs">
-      <Filter>pbr</Filter>
-    </None>
-    <None Include="pbr\prefilterShader.fs">
-      <Filter>pbr</Filter>
-    </None>
-    <None Include="ssao\ssao.fs">
-      <Filter>ssao</Filter>
-    </None>
-    <None Include="ssao\ssao.vs">
-      <Filter>ssao</Filter>
-    </None>
-    <None Include="ssao\ssao_blur.fs">
-      <Filter>ssao</Filter>
-    </None>
-    <None Include="ssao\ssao_geometry.fs">
-      <Filter>ssao</Filter>
-    </None>
-    <None Include="ssao\ssao_geometry.vs">
-      <Filter>ssao</Filter>
-    </None>
-    <None Include="ssao\ssao_lighting.fs">
-      <Filter>ssao</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="pbr\pbr.cpp">
-      <Filter>pbr</Filter>
-    </ClCompile>
     <ClCompile Include="utility\glad.c">
       <Filter>utility</Filter>
     </ClCompile>
-    <ClCompile Include="ssao\ssao.cpp">
+    <ClCompile Include="src\pbr\pbr.cpp">
+      <Filter>pbr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ssao\ssao.cpp">
       <Filter>ssao</Filter>
     </ClCompile>
   </ItemGroup>
@@ -88,5 +38,55 @@
     <ClInclude Include="utility\stb_image.h">
       <Filter>utility</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\pbr\background.fs">
+      <Filter>pbr</Filter>
+    </None>
+    <None Include="src\pbr\background.vs">
+      <Filter>pbr</Filter>
+    </None>
+    <None Include="src\pbr\brdf.fs">
+      <Filter>pbr</Filter>
+    </None>
+    <None Include="src\pbr\brdf.vs">
+      <Filter>pbr</Filter>
+    </None>
+    <None Include="src\pbr\cubemap.vs">
+      <Filter>pbr</Filter>
+    </None>
+    <None Include="src\pbr\equirectangular_to_cubemap.fs">
+      <Filter>pbr</Filter>
+    </None>
+    <None Include="src\pbr\irradiance_convolution.fs">
+      <Filter>pbr</Filter>
+    </None>
+    <None Include="src\pbr\pbr.fs">
+      <Filter>pbr</Filter>
+    </None>
+    <None Include="src\pbr\pbr.vs">
+      <Filter>pbr</Filter>
+    </None>
+    <None Include="src\pbr\prefilterShader.fs">
+      <Filter>pbr</Filter>
+    </None>
+    <None Include="src\ssao\ssao.fs">
+      <Filter>ssao</Filter>
+    </None>
+    <None Include="src\ssao\ssao.vs">
+      <Filter>ssao</Filter>
+    </None>
+    <None Include="src\ssao\ssao_blur.fs">
+      <Filter>ssao</Filter>
+    </None>
+    <None Include="src\ssao\ssao_geometry.fs">
+      <Filter>ssao</Filter>
+    </None>
+    <None Include="src\ssao\ssao_geometry.vs">
+      <Filter>ssao</Filter>
+    </None>
+    <None Include="src\ssao\ssao_lighting.fs">
+      <Filter>ssao</Filter>
+    </None>
   </ItemGroup>
 </Project>

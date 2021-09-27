@@ -89,10 +89,10 @@
 //
 //    // build and compile shaders
 //    // -------------------------
-//    Shader shaderGeometryPass("ssao/ssao_geometry.vs", "ssao/ssao_geometry.fs");
-//    Shader shaderLightingPass("ssao/ssao.vs", "ssao/ssao_lighting.fs");
-//    Shader shaderSSAO("ssao/ssao.vs", "ssao/ssao.fs");
-//    Shader shaderSSAOBlur("ssao/ssao.vs", "ssao/ssao_blur.fs");
+//    Shader shaderGeometryPass("src/ssao/ssao_geometry.vs", "src/ssao/ssao_geometry.fs");
+//    Shader shaderLightingPass("src/ssao/ssao.vs", "src/ssao/ssao_lighting.fs");
+//    Shader shaderSSAO("src/ssao/ssao.vs", "src/ssao/ssao.fs");
+//    Shader shaderSSAOBlur("src/ssao/ssao.vs", "src/ssao/ssao_blur.fs");
 //
 //    // load models
 //    // -----------
