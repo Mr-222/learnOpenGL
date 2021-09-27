@@ -18,6 +18,36 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="pbr\background.fs" />
+    <None Include="pbr\background.vs" />
+    <None Include="pbr\brdf.fs" />
+    <None Include="pbr\brdf.vs" />
+    <None Include="pbr\cubemap.vs" />
+    <None Include="pbr\equirectangular_to_cubemap.fs" />
+    <None Include="pbr\irradiance_convolution.fs" />
+    <None Include="pbr\pbr.fs" />
+    <None Include="pbr\pbr.vs" />
+    <None Include="pbr\prefilterShader.fs" />
+    <None Include="ssao\ssao.fs" />
+    <None Include="ssao\ssao.vs" />
+    <None Include="ssao\ssao_blur.fs" />
+    <None Include="ssao\ssao_geometry.fs" />
+    <None Include="ssao\ssao_geometry.vs" />
+    <None Include="ssao\ssao_lighting.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pbr\pbr.cpp" />
+    <ClCompile Include="ssao\ssao.cpp" />
+    <ClCompile Include="utility\glad.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="utility\camera.h" />
+    <ClInclude Include="utility\mesh.h" />
+    <ClInclude Include="utility\model.h" />
+    <ClInclude Include="utility\shader_s.h" />
+    <ClInclude Include="utility\stb_image.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -144,35 +174,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="pbr\pbr.cpp" />
-    <ClCompile Include="utility\glad.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="pbr\background.vs" />
-    <None Include="pbr\brdf.fs" />
-    <None Include="pbr\brdf.vs" />
-    <None Include="pbr\cubemap.vs" />
-    <None Include="pbr\equirectangular_to_cubemap.fs" />
-    <None Include="pbr\irradiance_convolution.fs" />
-    <None Include="pbr\pbr.vs" />
-    <None Include="pbr\prefilterShader.fs" />
-    <None Include="pbr\pbr.fs" />
-    <None Include="pbr\background.fs" />
-    <None Include="ssao\9.ssao.fs" />
-    <None Include="ssao\9.ssao.vs" />
-    <None Include="ssao\9.ssao_blur.fs" />
-    <None Include="ssao\9.ssao_geometry.fs" />
-    <None Include="ssao\9.ssao_geometry.vs" />
-    <None Include="ssao\9.ssao_lighting.fs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="utility\camera.h" />
-    <ClInclude Include="utility\mesh.h" />
-    <ClInclude Include="utility\model.h" />
-    <ClInclude Include="utility\shader_s.h" />
-    <ClInclude Include="utility\stb_image.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

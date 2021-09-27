@@ -1,14 +1,19 @@
+/*
+如果你想运行pbr.cpp，请清除本文件（pbr.cpp）注释的同时注释掉ssao.cpp中的所有内容
+if you want to run pbr.cpp, please release the comments in this file(pbr.cpp) and at the same time comment out all the code lines in ssao.cpp
+*/
+
+
+
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#include "../utility/stb_image.h"
-
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
 #include "../utility/shader_s.h"
 #include "../utility/camera.h"
-#include "../utility/camera.h"
+#include "../utility/stb_image.h"
 
 #include <iostream>
 #include <filesystem>

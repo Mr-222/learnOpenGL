@@ -1,42 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="utility">
-      <UniqueIdentifier>{2cf9bd89-4f22-4c55-b329-c15bd8810c62}</UniqueIdentifier>
+    <Filter Include="pbr">
+      <UniqueIdentifier>{1545a83f-0b7e-425b-900d-5c72c80f6a20}</UniqueIdentifier>
     </Filter>
     <Filter Include="ssao">
-      <UniqueIdentifier>{29365edc-c9a0-4772-8f54-22c69348f63a}</UniqueIdentifier>
+      <UniqueIdentifier>{62c171e6-4ebd-4d6e-b600-aa4f495862a3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="pbr">
-      <UniqueIdentifier>{5471bb46-f302-406a-b9bd-059259f00733}</UniqueIdentifier>
+    <Filter Include="utility">
+      <UniqueIdentifier>{eac5f6e0-7943-417b-a17c-7e8c6b4e70c5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="utility\glad.c">
-      <Filter>utility</Filter>
-    </ClCompile>
-    <ClCompile Include="pbr\pbr.cpp">
+    <None Include="pbr\background.fs">
       <Filter>pbr</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ssao\9.ssao.fs">
-      <Filter>ssao</Filter>
-    </None>
-    <None Include="ssao\9.ssao.vs">
-      <Filter>ssao</Filter>
-    </None>
-    <None Include="ssao\9.ssao_blur.fs">
-      <Filter>ssao</Filter>
-    </None>
-    <None Include="ssao\9.ssao_geometry.fs">
-      <Filter>ssao</Filter>
-    </None>
-    <None Include="ssao\9.ssao_geometry.vs">
-      <Filter>ssao</Filter>
-    </None>
-    <None Include="ssao\9.ssao_lighting.fs">
-      <Filter>ssao</Filter>
     </None>
     <None Include="pbr\background.vs">
       <Filter>pbr</Filter>
@@ -56,18 +33,44 @@
     <None Include="pbr\irradiance_convolution.fs">
       <Filter>pbr</Filter>
     </None>
+    <None Include="pbr\pbr.fs">
+      <Filter>pbr</Filter>
+    </None>
     <None Include="pbr\pbr.vs">
       <Filter>pbr</Filter>
     </None>
     <None Include="pbr\prefilterShader.fs">
       <Filter>pbr</Filter>
     </None>
-    <None Include="pbr\pbr.fs">
-      <Filter>pbr</Filter>
+    <None Include="ssao\ssao.fs">
+      <Filter>ssao</Filter>
     </None>
-    <None Include="pbr\background.fs">
-      <Filter>pbr</Filter>
+    <None Include="ssao\ssao.vs">
+      <Filter>ssao</Filter>
     </None>
+    <None Include="ssao\ssao_blur.fs">
+      <Filter>ssao</Filter>
+    </None>
+    <None Include="ssao\ssao_geometry.fs">
+      <Filter>ssao</Filter>
+    </None>
+    <None Include="ssao\ssao_geometry.vs">
+      <Filter>ssao</Filter>
+    </None>
+    <None Include="ssao\ssao_lighting.fs">
+      <Filter>ssao</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pbr\pbr.cpp">
+      <Filter>pbr</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\glad.c">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="ssao\ssao.cpp">
+      <Filter>ssao</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utility\camera.h">
