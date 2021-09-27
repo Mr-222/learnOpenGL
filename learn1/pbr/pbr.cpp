@@ -1,14 +1,14 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#include "stb_image.h"
+#include "../utility/stb_image.h"
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
-#include "shader_s.h"
-#include "camera.h"
-#include "model.h"
+#include "../utility/shader_s.h"
+#include "../utility/camera.h"
+#include "../utility/camera.h"
 
 #include <iostream>
 #include <filesystem>
@@ -85,12 +85,12 @@ int main()
 
     // build and compile shaders
     // -------------------------
-    Shader pbrShader("2.2.1.pbr.vs", "2.2.2.pbr.fs");
-    Shader equirectangularToCubemapShader("2.2.1.cubemap.vs", "2.2.1.equirectangular_to_cubemap.fs");
-    Shader irradianceShader("2.2.1.cubemap.vs", "2.2.1.irradiance_convolution.fs");
-    Shader prefilterShader("2.2.1.cubemap.vs", "2.2.1.prefilterShader.fs");
-    Shader brdfShader("2.2.1.brdf.vs", "2.2.1.brdf.fs");
-    Shader backgroundShader("2.2.1.background.vs", "2.2.1.background.fs");
+    Shader pbrShader("pbr/pbr.vs", "pbr/pbr.fs");
+    Shader equirectangularToCubemapShader("pbr/cubemap.vs", "pbr/equirectangular_to_cubemap.fs");
+    Shader irradianceShader("pbr/cubemap.vs", "pbr/irradiance_convolution.fs");
+    Shader prefilterShader("pbr/cubemap.vs", "pbr/prefilterShader.fs");
+    Shader brdfShader("pbr/brdf.vs", "pbr/brdf.fs");
+    Shader backgroundShader("pbr/background.vs", "pbr/background.fs");
 
     pbrShader.use();
     pbrShader.setInt("irradianceMap", 0);

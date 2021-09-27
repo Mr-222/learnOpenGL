@@ -12,87 +12,78 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="glad.c">
+    <ClCompile Include="utility\glad.c">
       <Filter>utility</Filter>
     </ClCompile>
-    <ClCompile Include="pbr.cpp">
+    <ClCompile Include="pbr\pbr.cpp">
       <Filter>pbr</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="camera.h">
-      <Filter>utility</Filter>
-    </ClInclude>
-    <ClInclude Include="mesh.h">
-      <Filter>utility</Filter>
-    </ClInclude>
-    <ClInclude Include="model.h">
-      <Filter>utility</Filter>
-    </ClInclude>
-    <ClInclude Include="shader_s.h">
-      <Filter>utility</Filter>
-    </ClInclude>
-    <ClInclude Include="stb_image.h">
-      <Filter>utility</Filter>
-    </ClInclude>
+    <None Include="ssao\9.ssao.fs">
+      <Filter>ssao</Filter>
+    </None>
+    <None Include="ssao\9.ssao.vs">
+      <Filter>ssao</Filter>
+    </None>
+    <None Include="ssao\9.ssao_blur.fs">
+      <Filter>ssao</Filter>
+    </None>
+    <None Include="ssao\9.ssao_geometry.fs">
+      <Filter>ssao</Filter>
+    </None>
+    <None Include="ssao\9.ssao_geometry.vs">
+      <Filter>ssao</Filter>
+    </None>
+    <None Include="ssao\9.ssao_lighting.fs">
+      <Filter>ssao</Filter>
+    </None>
+    <None Include="pbr\background.vs">
+      <Filter>pbr</Filter>
+    </None>
+    <None Include="pbr\brdf.fs">
+      <Filter>pbr</Filter>
+    </None>
+    <None Include="pbr\brdf.vs">
+      <Filter>pbr</Filter>
+    </None>
+    <None Include="pbr\cubemap.vs">
+      <Filter>pbr</Filter>
+    </None>
+    <None Include="pbr\equirectangular_to_cubemap.fs">
+      <Filter>pbr</Filter>
+    </None>
+    <None Include="pbr\irradiance_convolution.fs">
+      <Filter>pbr</Filter>
+    </None>
+    <None Include="pbr\pbr.vs">
+      <Filter>pbr</Filter>
+    </None>
+    <None Include="pbr\prefilterShader.fs">
+      <Filter>pbr</Filter>
+    </None>
+    <None Include="pbr\pbr.fs">
+      <Filter>pbr</Filter>
+    </None>
+    <None Include="pbr\background.fs">
+      <Filter>pbr</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="1.1.pbr.fs">
-      <Filter>pbr</Filter>
-    </None>
-    <None Include="2.2.1.brdf.vs">
-      <Filter>pbr</Filter>
-    </None>
-    <None Include="1.1.pbr.vs">
-      <Filter>pbr</Filter>
-    </None>
-    <None Include="2.2.1.background.fs">
-      <Filter>pbr</Filter>
-    </None>
-    <None Include="2.2.1.background.vs">
-      <Filter>pbr</Filter>
-    </None>
-    <None Include="2.2.1.brdf.fs">
-      <Filter>pbr</Filter>
-    </None>
-    <None Include="2.2.1.cubemap.vs">
-      <Filter>pbr</Filter>
-    </None>
-    <None Include="2.2.1.equirectangular_to_cubemap.fs">
-      <Filter>pbr</Filter>
-    </None>
-    <None Include="2.2.1.irradiance_convolution.fs">
-      <Filter>pbr</Filter>
-    </None>
-    <None Include="2.2.1.pbr.fs">
-      <Filter>pbr</Filter>
-    </None>
-    <None Include="2.2.1.pbr.vs">
-      <Filter>pbr</Filter>
-    </None>
-    <None Include="2.2.1.prefilterShader.fs">
-      <Filter>ssao</Filter>
-    </None>
-    <None Include="2.2.2.pbr.fs">
-      <Filter>pbr</Filter>
-    </None>
-    <None Include="9.ssao.fs">
-      <Filter>ssao</Filter>
-    </None>
-    <None Include="9.ssao.vs">
-      <Filter>ssao</Filter>
-    </None>
-    <None Include="9.ssao_blur.fs">
-      <Filter>ssao</Filter>
-    </None>
-    <None Include="9.ssao_geometry.fs">
-      <Filter>ssao</Filter>
-    </None>
-    <None Include="9.ssao_geometry.vs">
-      <Filter>ssao</Filter>
-    </None>
-    <None Include="9.ssao_lighting.fs">
-      <Filter>ssao</Filter>
-    </None>
+    <ClInclude Include="utility\camera.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\mesh.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\model.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\shader_s.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\stb_image.h">
+      <Filter>utility</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -145,36 +145,33 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="glad.c" />
-    <ClCompile Include="pbr.cpp" />
+    <ClCompile Include="pbr\pbr.cpp" />
+    <ClCompile Include="utility\glad.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="camera.h" />
-    <ClInclude Include="mesh.h" />
-    <ClInclude Include="model.h" />
-    <ClInclude Include="shader_s.h" />
-    <ClInclude Include="stb_image.h" />
+    <None Include="pbr\background.vs" />
+    <None Include="pbr\brdf.fs" />
+    <None Include="pbr\brdf.vs" />
+    <None Include="pbr\cubemap.vs" />
+    <None Include="pbr\equirectangular_to_cubemap.fs" />
+    <None Include="pbr\irradiance_convolution.fs" />
+    <None Include="pbr\pbr.vs" />
+    <None Include="pbr\prefilterShader.fs" />
+    <None Include="pbr\pbr.fs" />
+    <None Include="pbr\background.fs" />
+    <None Include="ssao\9.ssao.fs" />
+    <None Include="ssao\9.ssao.vs" />
+    <None Include="ssao\9.ssao_blur.fs" />
+    <None Include="ssao\9.ssao_geometry.fs" />
+    <None Include="ssao\9.ssao_geometry.vs" />
+    <None Include="ssao\9.ssao_lighting.fs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="1.1.pbr.fs" />
-    <None Include="1.1.pbr.vs" />
-    <None Include="2.2.1.background.fs" />
-    <None Include="2.2.1.background.vs" />
-    <None Include="2.2.1.cubemap.vs" />
-    <None Include="2.2.1.equirectangular_to_cubemap.fs" />
-    <None Include="2.2.1.pbr.fs" />
-    <None Include="2.2.1.pbr.vs" />
-    <None Include="2.2.1.irradiance_convolution.fs" />
-    <None Include="2.2.1.brdf.fs" />
-    <None Include="2.2.1.brdf.vs" />
-    <None Include="2.2.1.prefilterShader.fs" />
-    <None Include="2.2.2.pbr.fs" />
-    <None Include="9.ssao.fs" />
-    <None Include="9.ssao.vs" />
-    <None Include="9.ssao_blur.fs" />
-    <None Include="9.ssao_geometry.fs" />
-    <None Include="9.ssao_geometry.vs" />
-    <None Include="9.ssao_lighting.fs" />
+    <ClInclude Include="utility\camera.h" />
+    <ClInclude Include="utility\mesh.h" />
+    <ClInclude Include="utility\model.h" />
+    <ClInclude Include="utility\shader_s.h" />
+    <ClInclude Include="utility\stb_image.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
